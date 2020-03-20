@@ -22,6 +22,16 @@
 		B3F15BDE2424FE0300D93C5D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F15BDD2424FE0300D93C5D /* HomeViewController.xib */; };
 		B3F15BE02424FE3600D93C5D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F15BDF2424FE3600D93C5D /* ProfileViewController.xib */; };
 		B3F15BE22424FF2B00D93C5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BE12424FF2B00D93C5D /* Router.swift */; };
+		B3F15BE72425146000D93C5D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BE62425146000D93C5D /* HomeModel.swift */; };
+		B3F15BE92425146C00D93C5D /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BE82425146C00D93C5D /* ProfileModel.swift */; };
+		B3F15BEC242514E600D93C5D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BEB242514E600D93C5D /* Student.swift */; };
+		B3F15BEE242515B000D93C5D /* UClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BED242515B000D93C5D /* UClass.swift */; };
+		B3F15BF32425164400D93C5D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BF22425164400D93C5D /* HomeViewModel.swift */; };
+		B3F15BF52425164E00D93C5D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BF42425164E00D93C5D /* ProfileViewModel.swift */; };
+		B3F15BF924251CC300D93C5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BF724251CC300D93C5D /* HomeTableViewCell.swift */; };
+		B3F15BFA24251CC300D93C5D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F15BF824251CC300D93C5D /* HomeTableViewCell.xib */; };
+		B3F15BFC2425213600D93C5D /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BFB2425213600D93C5D /* Extension+UITableView.swift */; };
+		B3F15BFE2425225200D93C5D /* Extension+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F15BFD2425225200D93C5D /* Extension+Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,16 @@
 		B3F15BDD2424FE0300D93C5D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B3F15BDF2424FE3600D93C5D /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		B3F15BE12424FF2B00D93C5D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B3F15BE62425146000D93C5D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		B3F15BE82425146C00D93C5D /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		B3F15BEB242514E600D93C5D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		B3F15BED242515B000D93C5D /* UClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UClass.swift; sourceTree = "<group>"; };
+		B3F15BF22425164400D93C5D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B3F15BF42425164E00D93C5D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B3F15BF724251CC300D93C5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B3F15BF824251CC300D93C5D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		B3F15BFB2425213600D93C5D /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		B3F15BFD2425225200D93C5D /* Extension+Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Object.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +169,8 @@
 		B3F15BC92424FC7900D93C5D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B3F15BEA242514CD00D93C5D /* General */,
+				B3F15BE32425144000D93C5D /* Main */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +186,7 @@
 		B3F15BCB2424FC8800D93C5D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B3F15BEF2425163100D93C5D /* Main */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -181,6 +204,8 @@
 		B3F15BCD2424FCA100D93C5D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B3F15BFB2425213600D93C5D /* Extension+UITableView.swift */,
+				B3F15BFD2425225200D93C5D /* Extension+Object.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -198,6 +223,7 @@
 		B3F15BD72424FDC500D93C5D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B3F15BF624251CAA00D93C5D /* Cell */,
 				B3F15BD82424FDD000D93C5D /* HomeViewController.swift */,
 				B3F15BDD2424FE0300D93C5D /* HomeViewController.xib */,
 			);
@@ -211,6 +237,74 @@
 				B3F15BDF2424FE3600D93C5D /* ProfileViewController.xib */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3F15BE32425144000D93C5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BE52425145000D93C5D /* Home */,
+				B3F15BE42425144A00D93C5D /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3F15BE42425144A00D93C5D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BE82425146C00D93C5D /* ProfileModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3F15BE52425145000D93C5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BE62425146000D93C5D /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3F15BEA242514CD00D93C5D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BEB242514E600D93C5D /* Student.swift */,
+				B3F15BED242515B000D93C5D /* UClass.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		B3F15BEF2425163100D93C5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BF12425163900D93C5D /* Home */,
+				B3F15BF02425163400D93C5D /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3F15BF02425163400D93C5D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BF42425164E00D93C5D /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3F15BF12425163900D93C5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BF22425164400D93C5D /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3F15BF624251CAA00D93C5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15BF724251CC300D93C5D /* HomeTableViewCell.swift */,
+				B3F15BF824251CC300D93C5D /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +416,7 @@
 				B3F15BA12424E8AE00D93C5D /* Assets.xcassets in Resources */,
 				B3F15B9F2424E8AB00D93C5D /* Main.storyboard in Resources */,
 				B3F15BE02424FE3600D93C5D /* ProfileViewController.xib in Resources */,
+				B3F15BFA24251CC300D93C5D /* HomeTableViewCell.xib in Resources */,
 				B3F15BDE2424FE0300D93C5D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,12 +444,21 @@
 			files = (
 				B3F15B9C2424E8AB00D93C5D /* ViewController.swift in Sources */,
 				B3F15B982424E8AB00D93C5D /* AppDelegate.swift in Sources */,
+				B3F15BEE242515B000D93C5D /* UClass.swift in Sources */,
+				B3F15BE72425146000D93C5D /* HomeModel.swift in Sources */,
+				B3F15BEC242514E600D93C5D /* Student.swift in Sources */,
 				B3F15BD42424FD4B00D93C5D /* MainTabBarViewController.swift in Sources */,
+				B3F15BF924251CC300D93C5D /* HomeTableViewCell.swift in Sources */,
+				B3F15BF52425164E00D93C5D /* ProfileViewModel.swift in Sources */,
+				B3F15BFE2425225200D93C5D /* Extension+Object.swift in Sources */,
 				B3F15BE22424FF2B00D93C5D /* Router.swift in Sources */,
+				B3F15BE92425146C00D93C5D /* ProfileModel.swift in Sources */,
+				B3F15BF32425164400D93C5D /* HomeViewModel.swift in Sources */,
 				B3F15BD22424FCCE00D93C5D /* Enum.swift in Sources */,
 				B3F15BD92424FDD000D93C5D /* HomeViewController.swift in Sources */,
 				B3F15BDC2424FDEB00D93C5D /* ProfileViewController.swift in Sources */,
 				B3F15BD02424FCB000D93C5D /* Constant.swift in Sources */,
+				B3F15BFC2425213600D93C5D /* Extension+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

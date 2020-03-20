@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="UnitTestingExample" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ASc-lL-nzj" id="oeg-OT-STS"/>
                 <outlet property="view" destination="17r-Kp-p3I" id="dcR-Yy-aKB"/>
             </connections>
         </placeholder>
@@ -17,17 +18,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey Im home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-kT-tRY">
-                    <rect key="frame" x="156.5" y="437.5" width="101" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-lL-nzj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="gb1-kT-tRY" firstAttribute="centerY" secondItem="17r-Kp-p3I" secondAttribute="centerY" id="JPu-sn-6Ke"/>
-                <constraint firstItem="gb1-kT-tRY" firstAttribute="centerX" secondItem="17r-Kp-p3I" secondAttribute="centerX" id="RHu-vE-EOx"/>
+                <constraint firstItem="ASc-lL-nzj" firstAttribute="top" secondItem="5KH-Of-0fC" secondAttribute="top" id="CBn-ca-cwc"/>
+                <constraint firstItem="5KH-Of-0fC" firstAttribute="trailing" secondItem="ASc-lL-nzj" secondAttribute="trailing" id="JCy-hM-mfx"/>
+                <constraint firstItem="5KH-Of-0fC" firstAttribute="bottom" secondItem="ASc-lL-nzj" secondAttribute="bottom" id="PQe-7g-iUy"/>
+                <constraint firstItem="ASc-lL-nzj" firstAttribute="leading" secondItem="5KH-Of-0fC" secondAttribute="leading" id="p48-ie-dNk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="5KH-Of-0fC"/>
             <point key="canvasLocation" x="132" y="153"/>
