@@ -18,6 +18,11 @@ class HomeViewController: UIViewController {
         setComponent()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigation("Home")
+    }
+    
     private func setComponent() {
         // tableview
         tableView.delegate = self
@@ -26,6 +31,7 @@ class HomeViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.register(cellType: HomeTableViewCell.self)
+        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
     }
 }
 

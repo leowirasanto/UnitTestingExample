@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Profile {
+struct ProfileModel {
     var fullName: String?
     var ppUrl: String?
     var nickname: String?
-    var uClass: UClass?
+    var classId: String?
 }

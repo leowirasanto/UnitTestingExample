@@ -12,17 +12,21 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var studentImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var classLbl: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
     var student: Student? {
         didSet {
             nameLbl.text = student?.fullname
             classLbl.text = "Class '\(student?.classId ?? "A")'"
+            studentImg.setImage(student?.ppUrl)
+            studentImg.round(studentImg.bounds.width / 2)
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        cardView.dropShadow()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

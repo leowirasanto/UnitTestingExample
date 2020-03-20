@@ -17,12 +17,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7O1-Yl-pLK">
-                        <rect key="frame" x="16" y="0.0" width="288" height="88"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8MM-rB-Kjz">
-                                <rect key="frame" x="16" y="0.0" width="256" height="88"/>
+                                <rect key="frame" x="16" y="0.0" width="288" height="88"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-yc-rqj">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-yc-rqj">
                                         <rect key="frame" x="0.0" y="19" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GG1-yc-rqj" secondAttribute="height" multiplier="1:1" id="Rjy-Za-1fr"/>
@@ -30,16 +30,16 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-7u-eFp">
-                                        <rect key="frame" x="66" y="25" width="190" height="38"/>
+                                        <rect key="frame" x="66" y="25" width="222" height="38"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2V-tb-APc">
-                                                <rect key="frame" x="0.0" y="0.0" width="190" height="19.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="222" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class &quot;A&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt2-IK-4um">
-                                                <rect key="frame" x="0.0" y="23.5" width="190" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="23.5" width="222" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -62,13 +62,14 @@
                 <constraints>
                     <constraint firstItem="7O1-Yl-pLK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="B1Y-YF-amh"/>
                     <constraint firstAttribute="bottom" secondItem="7O1-Yl-pLK" secondAttribute="bottom" constant="16" id="QcK-Qu-qrP"/>
-                    <constraint firstItem="7O1-Yl-pLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TfT-4N-5SA"/>
-                    <constraint firstAttribute="trailing" secondItem="7O1-Yl-pLK" secondAttribute="trailing" constant="16" id="VUG-16-MPC"/>
+                    <constraint firstItem="7O1-Yl-pLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TfT-4N-5SA"/>
+                    <constraint firstAttribute="trailing" secondItem="7O1-Yl-pLK" secondAttribute="trailing" id="VUG-16-MPC"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cardView" destination="7O1-Yl-pLK" id="WVo-G6-WaB"/>
                 <outlet property="classLbl" destination="pt2-IK-4um" id="zpw-Pl-IYA"/>
                 <outlet property="nameLbl" destination="h2V-tb-APc" id="zLc-pT-z1i"/>
                 <outlet property="studentImg" destination="GG1-yc-rqj" id="5t9-Os-Aqt"/>
