@@ -18,9 +18,11 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         profileVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
-        let view = [homeVC, profileVC].map { UINavigationController(rootViewController: $0) }
+        let view = [homeVC, profileVC].map {
+            UINavigationController(rootViewController: $0)
+        }
         viewControllers = view
-    }
+    } 
     
 //    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
 //        

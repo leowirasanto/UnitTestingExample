@@ -10,16 +10,19 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func setImage(_ urlString: String?) {
+    func setImage(_ urlString: String?, _ placeHolder: UIImage? = UIImage(named: "img-dummy")) {
         if let str = urlString, let url = URL(string: str) {
             getData(from: url) { data, _, error in
-                guard let data = data, error == nil else { return }
+                guard let data = data, error == nil else {
+                    self.image = placeHolder
+                    return
+                }
                 DispatchQueue.main.async {
                     self.image = UIImage(data: data)
                 }
             }
         } else {
-            image = UIImage(named: "img-dummy")
+            image = placeHolder
         }
     }
 
