@@ -21,14 +21,13 @@ class UIImageExtensionTest: XCTestCase {
 
     func test_image_file_not_found() {
         let url_ = URL(string: "9gag.com")
-        let promise = expectation(description: "Image not found!")
         guard let url = url_ else {
             XCTFail("url nil")
             return
         }
         imageClass.getData(from: url) { data, _, error in
             guard data != nil, error == nil else {
-                promise.fulfill()
+                XCTAssertEqual(data, nil)
                 return
             }
             XCTFail("Image found")

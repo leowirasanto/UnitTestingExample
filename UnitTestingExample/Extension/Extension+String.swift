@@ -19,6 +19,13 @@ extension String {
             return _strDate
         }
         return nil
+    }
+    
+    func toDate(with initialFormat: String = "yyyy-MM-dd HH:mm") -> Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = initialFormat
+        let date = formatter.date(from: self)
+        return date
     } 
     
     func className() -> String {

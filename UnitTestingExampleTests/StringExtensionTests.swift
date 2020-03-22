@@ -35,5 +35,10 @@ class StringExtensionTests: XCTestCase {
         let result = dateString.formatStringDate()
         XCTAssertEqual(result, "31 March 19 11:11")
     }
-
+    
+    func test_convert_string_to_date() {
+        let stringDate = Date().convertDateToString()
+        let result = stringDate.toDate()
+        XCTAssertTrue(result != nil, "Convert date success if result not nil")
+    }
 }
