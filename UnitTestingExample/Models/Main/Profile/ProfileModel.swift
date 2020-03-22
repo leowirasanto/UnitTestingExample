@@ -13,4 +13,5 @@ struct ProfileModel {
     var ppUrl: String?
     var nickname: String?
     var classId: String?
+    var lastUpdate: String?
 }
