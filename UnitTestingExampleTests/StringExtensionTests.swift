@@ -19,9 +19,8 @@ class StringExtensionTests: XCTestCase {
     }
     
     func test_show_student_class_name_with_B() {
-        let student = Student(id: 0, fullname: "Rick", ppUrl: Constant.DummyImageStringURL.dummyBoyStudent, classId: "B")
-        let name = student.classId?.className()
-        XCTAssertEqual(name!, "Class 'B'")
+        let name = "B"
+        XCTAssertEqual(name, "Class 'B'")
     }
     
     func test_date_formatter_failed_because_wrong_initial_format() {

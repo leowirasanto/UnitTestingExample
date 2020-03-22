@@ -13,6 +13,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var classLbl: UILabel!
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var lastOnlineLbl: UILabel!
     
     var student: Student? {
         didSet {
@@ -20,6 +21,7 @@ class HomeTableViewCell: UITableViewCell {
             classLbl.text = student?.classId?.className()
             studentImg.setImage(student?.ppUrl)
             studentImg.round(studentImg.bounds.width / 2)
+            lastOnlineLbl.text = "Last online: \(student?.lastUpdate?.formatStringDate(with: "yyyy-MM-dd HH:mm", to: "dd MMM yyyy, HH:mm") ?? "-")"
         }
     }
     

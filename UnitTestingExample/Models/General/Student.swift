@@ -13,4 +13,5 @@ struct Student {
     var fullname: String?
     var ppUrl: String?
     var classId: String?
+    var lastUpdate: String?
 }

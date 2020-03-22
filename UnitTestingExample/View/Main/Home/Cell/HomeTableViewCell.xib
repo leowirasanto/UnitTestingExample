@@ -30,7 +30,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-7u-eFp">
-                                        <rect key="frame" x="66" y="25" width="222" height="38"/>
+                                        <rect key="frame" x="66" y="18" width="222" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2V-tb-APc">
                                                 <rect key="frame" x="0.0" y="0.0" width="222" height="19.5"/>
@@ -42,6 +42,12 @@
                                                 <rect key="frame" x="0.0" y="23.5" width="222" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last online 22 12 02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1Y-70-QpM">
+                                                <rect key="frame" x="0.0" y="42" width="222" height="10"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -71,6 +77,7 @@
             <connections>
                 <outlet property="cardView" destination="7O1-Yl-pLK" id="WVo-G6-WaB"/>
                 <outlet property="classLbl" destination="pt2-IK-4um" id="zpw-Pl-IYA"/>
+                <outlet property="lastOnlineLbl" destination="v1Y-70-QpM" id="GH1-YT-7va"/>
                 <outlet property="nameLbl" destination="h2V-tb-APc" id="zLc-pT-z1i"/>
                 <outlet property="studentImg" destination="GG1-yc-rqj" id="5t9-Os-Aqt"/>
             </connections>
