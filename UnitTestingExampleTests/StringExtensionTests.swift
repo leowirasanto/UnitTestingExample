@@ -10,10 +10,8 @@ import XCTest
 @testable import UnitTestingExample
 
 class StringExtensionTests: XCTestCase {
-    var stringExt: String!
 
     override func setUp() {
-        stringExt = String()
     }
 
     override func tearDown() {
@@ -24,6 +22,18 @@ class StringExtensionTests: XCTestCase {
         let student = Student(id: 0, fullname: "Rick", ppUrl: Constant.DummyImageStringURL.dummyBoyStudent, classId: "B")
         let name = student.classId?.className()
         XCTAssertEqual(name!, "Class 'B'")
+    }
+    
+    func test_date_formatter_failed_because_wrong_initial_format() {
+        let dateString = "31 03 2019 11:11:03"
+        let result = dateString.formatStringDate(with: "dd MM yyyy HH:mm",to: "dd MM yy")
+        XCTAssertEqual(result, nil)
+    }
+    
+    func test_date_formatter_success_with_default_format() {
+        let dateString = "2019-03-31 11:11:03"
+        let result = dateString.formatStringDate()
+        XCTAssertEqual(result, "31 March 19 11:11")
     }
 
 }
