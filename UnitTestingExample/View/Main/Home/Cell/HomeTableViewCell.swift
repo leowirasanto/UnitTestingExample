@@ -17,7 +17,7 @@ class HomeTableViewCell: UITableViewCell {
     var student: Student? {
         didSet {
             nameLbl.text = student?.fullname
-            classLbl.text = "Class '\(student?.classId ?? "A")'"
+            classLbl.text = student?.classId?.className()
             studentImg.setImage(student?.ppUrl)
             studentImg.round(studentImg.bounds.width / 2)
         }
