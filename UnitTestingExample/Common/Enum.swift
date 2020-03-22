@@ -9,5 +9,8 @@
 import Foundation
 
 struct Enum {
-    
+    enum APIResult<T> {
+        case success(T)
+        case failure(Error)
+    }
 }

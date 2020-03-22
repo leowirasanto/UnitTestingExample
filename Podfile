@@ -15,5 +15,6 @@ pod 'lottie-ios'
 pod 'Cosmos', '~> 19.0'
 
 target 'UnitTestingExample'
+target 'UnitTestingExampleTests'
 
  

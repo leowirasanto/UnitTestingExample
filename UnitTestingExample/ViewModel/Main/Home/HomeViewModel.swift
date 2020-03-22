@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class HomeViewModel {
+class HomeViewModel: BaseViewModel {
     var classes: [UClass]? {
         return [
             UClass(className: "A", description: "This is the class A", ppUrl: Constant.DummyImageStringURL.dummyClassImage),
@@ -33,5 +34,21 @@ class HomeViewModel {
             Student(id: 0, fullname: "Junior", ppUrl: Constant.DummyImageStringURL.dummyGirlStudent, classId: "D", lastUpdate: "2020-03-27 23:44"),
             Student(id: 0, fullname: "John", ppUrl: Constant.DummyImageStringURL.dummyBoyStudent, classId: "C", lastUpdate: "2020-03-27 24:24")
         ]
+    }
+
+    func getStudents(completion: @escaping (Enum.APIResult<Void>) -> Void) {
+        let req: [String: Any] = [
+            "asdf": "asdf",
+            "asq": 1
+        ]
+        api.request(url: "www.com", request: req, method: .get, encoding: .default) { result in
+            switch result {
+            case .success(let json):
+                print(json)
+                completion(.success(()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }
